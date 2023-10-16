@@ -1,4 +1,4 @@
-name: Scheduled Jobs
+name: Schedule Test Every UTC00:00
 
 on:
   schedule:
