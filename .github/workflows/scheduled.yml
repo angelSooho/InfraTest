@@ -1,4 +1,4 @@
-name: Schedule Test Every UTC00:00
+name: Scheduler Test Every UTC00:00
 
 on:
   schedule:
