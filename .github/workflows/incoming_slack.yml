@@ -13,8 +13,8 @@ jobs:
       uses: 8398a7/action-slack@v3
       with:
         status: ${{ job.status }}
-        author_name: Sloth Backend - dev
-        fields: repo, commit, message, author, action, eventName, ref, workflow, job, took
+        author_name: 배포 성공
+        fields: repo, commit, message, author
         mention: here
         if_mention: failure,cancelled
       env:
