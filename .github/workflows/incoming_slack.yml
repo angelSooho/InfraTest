@@ -16,7 +16,7 @@ jobs:
       uses: 8398a7/action-slack@v3
       with:
         status: ${{ job.status }}
-        author_name: 배포 성공
+        author_name: 배포 ${{ job.status == 'success' && '성공' || '실패' }}
         fields: repo, commit, message, author
         mention: here
         if_mention: failure,cancelled
