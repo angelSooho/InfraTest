@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: 의도적 실패 유발
-      run: exit 1
+    # - name: 의도적 실패 유발
+    #   run: exit 1
     
     - name: 배포 성공 알림 발송
       uses: 8398a7/action-slack@v3
