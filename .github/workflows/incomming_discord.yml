@@ -20,6 +20,6 @@ jobs:
         status: ${{ job.status }}
         webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
         title: 배포 ${{ job.status == 'success' && '성공' || '실패' }}
-        avatar_url: ${{ secrets.MILLICON_AVATAR_URL }}
+        avatar_url: ${{ }}
         username: GitHub Actions
         color: ${{ job.status == 'success' && 0x009900 || 0xff0000 }}
